@@ -1,1 +1,0 @@
-from triangulo1 import TrianguloDefeituoso1
