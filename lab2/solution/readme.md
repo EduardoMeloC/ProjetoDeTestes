@@ -42,7 +42,7 @@ A seguir, é possível visualizar a saída do ```mutmut show``` para cada um dos
 <details>
   <summary>Mutações Sobreviventes</summary>
 
-- **Mutação Sobrevivente 1:** ROR (Relational Operator Replacement)
+- **Mutação Sobrevivente 1: ROR (Relational Operator Replacement)**
 
 ```python
   def tipo_triangulo(a, b, c):
@@ -53,7 +53,7 @@ A seguir, é possível visualizar a saída do ```mutmut show``` para cada um dos
          if (a==b and b == c):
 ```
 
-- **Mutação Sobrevivente 2:** ROR (Relational Operator Replacement)
+- **Mutação Sobrevivente 2: ROR (Relational Operator Replacement)**
 
 ```python
   def tipo_triangulo(a,b,c):
@@ -64,7 +64,7 @@ A seguir, é possível visualizar a saída do ```mutmut show``` para cada um dos
          if (a==b and b == c):
 ```
 
-- **Mutação Sobrevivente 3:** ROR (Relational Operator Replacement)
+- **Mutação Sobrevivente 3: ROR (Relational Operator Replacement)**
 
 ```python
   def tipo_triangulo(a,b,c):
