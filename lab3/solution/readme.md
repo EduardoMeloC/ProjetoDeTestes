@@ -217,4 +217,4 @@ O resultado esperado de ambos é 0, mas a mutação propagará 1.
 
 ### **5. Documentar todo o processo de projeto de testes.**
 
-O processo de projeto de testes utilizando o modelo RIP tornou-se iterativo. Inicialmente, foram construídos apenas os testes básicos que já obtidos através do enunciado da OBI. Mesmo com o código sendo aceito pelo validador automático da competição, tivemos mutações sobreviventes
+O processo de projeto de testes utilizando o modelo RIP tornou-se iterativo. Inicialmente, foram construídos apenas os testes básicos que já foram obtidos através do enunciado da OBI. Mesmo com o código sendo aceito pelo validador automático da competição, tivemos mutações sobreviventes. Utilizando o modelo RIP, foi possível verificar que apenas uma das mutações seriam capazes de propagar um erro, e, com isso, foi adicionado um caso de teste para eliminar a mutação.
