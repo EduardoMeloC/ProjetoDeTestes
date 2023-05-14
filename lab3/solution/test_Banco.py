@@ -11,7 +11,7 @@ class TestBanco():
         array_duracao_atendimento = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 3, 10, 10, 3]
         assert(Banco.banco(3, array_tempo_chegada, array_duracao_atendimento) == 2)
 
-    def test_saida_correta_banco3(self):
-        array_tempo_chegada = []
-        array_duracao_atendimento = []
-        assert(Banco.banco(1, array_tempo_chegada, array_duracao_atendimento) == 1)
+    def test_saida_correta_banco_mut7(self):
+        array_tempo_chegada = [0,5,6]
+        array_duracao_atendimento = [5,21,1]
+        assert(Banco.banco(1, array_tempo_chegada, array_duracao_atendimento) == 0)

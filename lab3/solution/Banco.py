@@ -18,14 +18,9 @@ def banco(C, arrival, service):
         #print(f"cashiers = {cashier}")
         argwaited = argmin(cashier)
         waited = cashier[argwaited]
-        if(waited<=0):
-            #print(f"{t} got served")
-            cashier[argwaited]=service[t]
-        else:
-            #print(f"{t} waited {waited} to get served by {argwaited}")
-            if(waited>20):
-                count += 1
-            cashier[argwaited]+=(service[t])
+        #print(f"{t} waited {waited} to get served by {argwaited}")
+        if(waited>20):
+            count += 1
+        cashier[argwaited]+=(service[t])
 
     return count
-
