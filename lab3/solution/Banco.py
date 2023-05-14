@@ -1,14 +1,3 @@
-def main():
-    arrival = []
-    service = []
-    C,N = [int(x) for x in input().split()]
-    for i in range(N):
-        T,D = [int(x) for x in input().split()]
-        arrival.append(T)
-        service.append(D)
-    
-    print(banco(C, arrival, service))
-
 def argmin(a):
     return min(range(len(a)), key=lambda x : a[x])
 
@@ -40,4 +29,3 @@ def banco(C, arrival, service):
 
     return count
 
-main()
