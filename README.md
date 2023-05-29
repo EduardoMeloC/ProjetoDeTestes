@@ -5,3 +5,5 @@ Repositório destinado às atividades da disciplina de Projeto de Testes, lecion
 
 - **lab1** - Testes Automatizados
 - **lab2** - Ferramentas de Mutação
+- **lab3** - Ferramentas de Mutação
+- **lab4** - Particionamento do Espaço de Entrada
