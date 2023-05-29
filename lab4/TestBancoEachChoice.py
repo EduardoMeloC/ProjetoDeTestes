@@ -1,6 +1,6 @@
 import Banco
 
-class TestBanco():
+class TestBancoEachChoice():
     def test_saida_correta_banco1(self):
         array_tempo_chegada = [0]
         array_duracao_atendimento = [10]
