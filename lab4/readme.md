@@ -14,6 +14,8 @@
 
 # Each choice
 
+Foram gerados 29 mutantes, dentre os quais 11 sobreviveram.
+
 - P11, P12, P13
 - P21, P22, P23
 - P32, P31, P33
@@ -27,6 +29,8 @@ C=9,N=4,T=[2,2,2,6],D=[5,6,2,10]
 C=10,N=1000,T=1000*[0],D=1000*[10]
 
 # Pairwise
+
+Foram gerados 29 mutantes, dentre os quais 11 sobreviveram.
 
 1. C=1,N=1,T=[0],D=[10]
 
@@ -149,6 +153,8 @@ P42, P52 X 12
 --------------------------------------------
 
 # Base choice
+
+Foram gerados 29 mutantes, dentre os quais 18 sobreviveram.
 
 - Base: P12, P22, P33, P42, P52 - C=2, N=3, T=[1,2,3], D=[1,5,10]
 
