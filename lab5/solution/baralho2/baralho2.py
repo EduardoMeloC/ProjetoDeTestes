@@ -6,7 +6,7 @@ def baralho2(entrada):
 
     faltam = {'C': 13, 'E': 13, 'U': 13, 'P': 13}
     for naipe in ['C', 'E', 'U', 'P']:
-        for valor in range(1, 13):
+        for valor in range(1, 14):
             qtd = cartas[naipe].count(valor)
             if qtd > 1:
                 faltam[naipe] = 'erro'

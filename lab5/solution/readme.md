@@ -34,6 +34,11 @@
 
 <br/>
 
+### Mutações de Nós
+
+- **baralho1.py**: Não passou no caso de teste
+- **baralho2.py**: 46 mutantes, dentre os quais 41 morreram e 5 sobreviveram
+
 # Critério de Cobertura de Arcos
 
 ## Requisitos de Arcos
@@ -68,6 +73,11 @@
 </details>
 
 <br/>
+
+### Mutações de Arcos
+
+- **baralho1.py**: Não passou no caso de teste
+- **baralho2.py**: 46 mutantes, dentre os quais 41 morreram e 5 sobreviveram
 
 # Crtiério de Cobertura de Pares de Arcos
 
@@ -120,6 +130,11 @@ _[4-5-14] (insatisfatível)_
 </details>
 
 <br/>
+
+### Mutações de Par de Arcos
+
+- **baralho1.py**: Não passou no caso de teste
+- **baralho2.py**: 46 mutantes, dentre os quais 43 morreram e 3 sobreviveram
 
 # Critério de Cobertura de Caminhos Primos
 
@@ -186,48 +201,47 @@ Ou seja, todos os requisitos contendo 1,2,4 e não seguirem isso, são insatisfa
 
 29. [7,13,5,6,7] - Sempre ocorre, devido ao for externo sempre se repetir 4x
 
-3. [1,2,4,5,6,7,8,10,12] - Input vazio
-41. [1,2,3] - Input não vazio
-42. [2,3,2] - Input não vazio
-43. [3,2,3] - Input maior que 2 cartas
+30. [1,2,4,5,6,7,8,10,12] - Input vazio
+31. [1,2,3] - Input não vazio
+32. [2,3,2] - Input não vazio
+33. [3,2,3] - Input maior que 2 cartas
 
+34. [3,2,4,5,6,7,8,10,11,12] - Possui 01C sem rep.
+35. [3,2,4,5,6,7,8,10,12] - Não Possui 01C [ñ vazio]
+36. [3,2,4,5,6,7,8,9,12] - Possui repetida 01C
 
-2. [3,2,4,5,6,7,8,10,11,12] - Possui 01C sem rep.
-5. [3,2,4,5,6,7,8,10,12] - Não Possui 01C [ñ vazio]
-6. [3,2,4,5,6,7,8,9,12] - Possui repetida 01C
+37. [8,10,11,12,7,13,5,14] - Possui 13P sem rep.
+38. [8,9,12,7,13,5,14] - Possui repetida 13P
+39. [8,10,12,7,13,5,14] - Não Possui 13P
 
-7. [8,10,11,12,7,13,5,14] - Possui 13P sem rep.
-15. [8,9,12,7,13,5,14] - Possui repetida 13P
-17. [8,10,12,7,13,5,14] - Não Possui 13P
+40. [13,5,6,7,8,10,11,12] - Possui 01E, 01U ou 01P sem rep.
+41. [13,5,6,7,8,9,12] - Possui repetida 01E, 01U ou 01P
+42. [13,5,6,7,8,10,12] - Não Possui 01E, 01U ou 01P
 
-8. [13,5,6,7,8,10,11,12] - Possui 01E, 01U ou 01P sem rep.
-13. [13,5,6,7,8,9,12] - Possui repetida 01E, 01U ou 01P
-14. [13,5,6,7,8,10,12] - Não Possui 01E, 01U ou 01P
+43. [8,10,11,12,7,13,5,6] - Possui 13C, 13E ou 13U sem rep.
+44. [8,9,12,7,13,5,6] - Possui repetida 13C, 13E ou 13U
+45. [8,10,12,7,13,5,6] - Não possui 13C, 13E ou 13U
 
-9. [8,10,11,12,7,13,5,6] - Possui 13C, 13E ou 13U sem rep.
-12. [8,9,12,7,13,5,6] - Possui repetida 13C, 13E ou 13U
-16. [8,10,12,7,13,5,6] - Não possui 13C, 13E ou 13U
+46. [7,8,10,11,12,7] - Possui alguma sem repetição
+47. [7,8,9,12,7] - Possui alguma repetida
+48. [7,8,10,12,7] - Não possui alguma
 
-18. [7,8,10,11,12,7] - Possui alguma sem repetição
-26. [7,8,9,12,7] - Possui alguma repetida
-30. [7,8,10,12,7] - Não possui alguma
+49. [8,10,11,12,7,8] - Possui 01-012[CEUP] sem rep.
+50. [8,9,12,7,8] - Possui repetida 01-012[CEUP]
+51. [8,10,12,7,8] - Não possui algum 01-012[CEUP]
 
-19. [8,10,11,12,7,8] - Possui 01-012[CEUP] sem rep.
-28. [8,9,12,7,8] - Possui repetida 01-012[CEUP]
-38. [8,10,12,7,8] - Não possui algum 01-012[CEUP]
+52. [12,7,8,10,11,12] - Possui 02-013[CEUP] sem rep.
+53. [12,7,8,9,12] - Possui repetida 02-013[CEUP]
+54. [12,7,8,10,12] - Não possui algum 02-013[CEUP]
 
-21. [12,7,8,10,11,12] - Possui 02-013[CEUP] sem rep.
-34. [12,7,8,9,12] - Possui repetida 02-013[CEUP]
-35. [12,7,8,10,12] - Não possui algum 02-013[CEUP]
+55. [11,12,7,8,10,11] - Possui 2 sem rep. do mesmo naipe, seguidas
+56. [10,11,12,7,8,9] - Possui sem rep. e repetida do mesmo naipe, seguidas
+57. [10,11,12,7,8,10] - Possui sem rep. e [sem rep. ou sem carta] do mesmo naipe, seguidas
 
-20. [11,12,7,8,10,11] - Possui 2 sem rep. do mesmo naipe, seguidas
-23. [10,11,12,7,8,9] - Possui sem rep. e repetida do mesmo naipe, seguidas
-24. [10,11,12,7,8,10] - Possui sem rep. e [sem rep. ou sem carta] do mesmo naipe, seguidas
-
-22. [9,12,7,8,10,11] - Possui repetida e sem rep. do mesmo naipe, seguidas
-37. [9,12,7,8,9] - Possui duas rep. seguidas do mesmo naipe
-39. [10,12,7,8,9] - Não possui e possui repetida do mesmo naipe, seguidas
-40. [10,12,7,8,10] - Não possui e (sem rep. ou não possui) do mesmo naipe, seguidas
+58. [9,12,7,8,10,11] - Possui repetida e sem rep. do mesmo naipe, seguidas
+59. [9,12,7,8,9] - Possui duas rep. seguidas do mesmo naipe
+60. [10,12,7,8,9] - Não possui e possui repetida do mesmo naipe, seguidas
+61. [10,12,7,8,10] - Não possui e (sem rep. ou não possui) do mesmo naipe, seguidas
 
 ## Casos de Teste de Caminhos Primos
 
@@ -270,3 +284,35 @@ Ou seja, todos os requisitos contendo 1,2,4 e não seguirem isso, são insatisfa
 <summary><b>Caminho</b></summary>
 [1, 2, 3, 2, 4, 5, 6, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 13, 5, 6, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 11, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 13, 5, 6, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 13, 5, 6, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 8, 10, 12, 7, 13, 5, 14]
 </details>
+
+### Mutações de Caminhos Primos
+
+- **baralho1.py**: Não passou no caso de teste
+- **baralho2.py**: 46 mutantes, dentre os quais 44 morreram e 2 sobreviveram
+
+No entanto, não existem casos de teste que matariam esses mutantes.
+
+**Mutante Sobrevivente 1**
+
+```python
+     faltam = {'C': 13, 'E': 13, 'U': 13, 'P': 13}
+     for naipe in ['C', 'E', 'U', 'P']:
+-        for valor in range(1, 14):
++        for valor in range(1, 15):
+             qtd = cartas[naipe].count(valor)
+             if qtd > 1:
+                 faltam[naipe] = 'erro'
+```
+
+**Mutante Sobrevivente 2**
+
+```python
+             qtd = cartas[naipe].count(valor)
+             if qtd > 1:
+                 faltam[naipe] = 'erro'
+-            elif qtd == 1 and faltam[naipe] != 'erro':
++            elif qtd == 1 and faltam[naipe] != 'XXerroXX':
+                 faltam[naipe] -= 1
+     return [faltam['C'], faltam['E'], faltam['U'], faltam['P']]
+
+```

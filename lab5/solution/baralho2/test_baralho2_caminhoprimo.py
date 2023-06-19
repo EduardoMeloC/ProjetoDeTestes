@@ -11,7 +11,7 @@ class TestBaralhoCaminhoPrimo():
         assert (baralho2.baralho2(input_str) == [11, 'erro', 'erro', 12])
 
     def test_baralho_3(self):
-        input_str = "01C 01C 13P 13P"
+        input_str = "01C01C13P13P"
         assert (baralho2.baralho2(input_str) == ['erro', 13, 13, 'erro'])
 
     def test_baralho_4(self):
