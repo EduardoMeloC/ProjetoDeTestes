@@ -287,6 +287,8 @@ Ou seja, todos os requisitos contendo 1,2,4 e não seguirem isso, são insatisfa
 
 ### Mutações de Caminhos Primos
 
+O for interno do código fornecido do `baralho2.py` enumerava com um range (1, 13). Caso esse tenha sido o pretendido, os testes não passariam. No entanto, para testar os mutantes, alteramos o for para ter o range de (1, 14).
+
 - **baralho1.py**: Não passou no caso de teste
 - **baralho2.py**: 46 mutantes, dentre os quais 44 morreram e 2 sobreviveram
 
