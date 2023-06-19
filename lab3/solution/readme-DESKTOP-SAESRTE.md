@@ -151,10 +151,9 @@ O resultado esperado de ambos é 0, mas a mutação propagará 1.
 
 ### **4. No caso de haver mutantes equivalentes, procurem mostrar que são equivalentes com uma argumentação rigorosa (vamos trabalhar um pouco mais sobre isso, mas tentem fazer algo).**
 
+<br/>
 <details>
   <summary><b>Mutação Sobrevivente 1</b></summary>
-
-  **Mutação Sobrevivente 1**
 
   ```python
     def banco(C, arrival, service):
@@ -167,8 +166,11 @@ O resultado esperado de ambos é 0, mas a mutação propagará 1.
   ```
 
   O único ponto do código que utilizar o valor mudado é a linha \`\`\`python diff = arrival\[t\] - last\_arrival\`\`\` , pois na linha imediatamente abaixo, o valor de last\_arrival é atribuído novamente, dessa vez a um valor da entrada. Logo, apenas na primeira iteração do for é executado o diff com last\_arrival modificado. Já que diff serve para decrementar cashier, e todos os seus valores já são zero nesse ponto, nada nunca acontece de diferente.
+</details>
+<br/>
 
-  **Mutações Sobreviventes 2-5**
+<details>
+  <summary><b>Mutações Sobreviventes 2-5</b></summary>
 
   ```python
     def banco(C, arrival, service):
@@ -190,7 +192,11 @@ O resultado esperado de ambos é 0, mas a mutação propagará 1.
       count += 1
   cashier[argwaited]+=(service[t])
   ```
-  **Mutação Sobrevivente 6**
+  </details>
+  </br>
+
+<details>
+  <summary><b>Mutação Sobrevivente 6</b></summary>
 
   ```python
     for t in range(len(arrival)):
@@ -207,4 +213,8 @@ O resultado esperado de ambos é 0, mas a mutação propagará 1.
 
   Adiciono apenas o caso em que diff é 0. Porém, tudo que é feito dentro do if é subtrair diff de campos. Se ele for 0, nenhuma diferença aparecerá.
 </details>
+<br/>
+
 ### **5. Documentar todo o processo de projeto de testes.**
+
+O processo de projeto de testes utilizando o modelo RIP tornou-se iterativo. Inicialmente, foram construídos apenas os testes básicos que já foram obtidos através do enunciado da OBI. Mesmo com o código sendo aceito pelo validador automático da competição, tivemos mutações sobreviventes. Utilizando o modelo RIP, foi possível verificar que apenas uma das mutações seriam capazes de propagar um erro, e, com isso, foi adicionado um caso de teste para eliminar a mutação.
