@@ -36,8 +36,9 @@
 
 ### Mutações de Nós
 
-- **baralho1.py**: Não passou no caso de teste
-- **baralho2.py**: 46 mutantes, dentre os quais 41 morreram e 5 sobreviveram
+- **baralho1_1**: 74 mutantes: 🎉 44 morreram, 🙁 30 sobreviveram
+- **baralho1_2**: 48 mutantes: 🎉 35 morreram, 🙁 13 sobreviveram
+- **baralho2**: 46 mutantes: 🎉 41 morreram, 🙁 5 sobreviveram
 
 # Critério de Cobertura de Arcos
 
@@ -76,8 +77,9 @@
 
 ### Mutações de Arcos
 
-- **baralho1.py**: Não passou no caso de teste
-- **baralho2.py**: 46 mutantes, dentre os quais 41 morreram e 5 sobreviveram
+- **baralho1_1**: 74 mutantes: 🎉 44 morreram, 🙁 30 sobreviveram
+- **baralho1_2**: 48 mutantes: 🎉 35 morreram, 🙁 13 sobreviveram
+- **baralho2**: 46 mutantes: 🎉 41 morreram, 🙁 5 sobreviveram
 
 # Crtiério de Cobertura de Pares de Arcos
 
@@ -133,56 +135,57 @@ _[4-5-14] (insatisfatível)_
 
 ### Mutações de Par de Arcos
 
-- **baralho1.py**: Não passou no caso de teste
-- **baralho2.py**: 46 mutantes, dentre os quais 43 morreram e 3 sobreviveram
+- **baralho1_1**: 74 mutantes: 🎉 45 morreram, 🙁 29 sobreviveram
+- **baralho1_2**: 48 mutantes: 🎉 36 morreram, 🙁 12 sobreviveram
+- **baralho2**: 46 mutantes: 🎉 43 morreram, 🙁 3 sobreviveram
 
 # Critério de Cobertura de Caminhos Primos
 
 ## Requisitos Caminhos Primos
 
-1. _[1,2,4,5,6,7,8,10,11,12] (insatisfatível)_
-2. [3,2,4,5,6,7,8,10,11,12]
-3. [1,2,4,5,6,7,8,10,12]
-4. _[1,2,4,5,6,7,8,9,12] (insatisfatível)_
-5. [3,2,4,5,6,7,8,10,12]
-6. [3,2,4,5,6,7,8,9,12]
-7. [8,10,11,12,7,13,5,14]
-8. [13,5,6,7,8,10,11,12]
-9. [8,10,11,12,7,13,5,6]
-10. _[3,2,4,5,6,7,13] (insatisfatível)_
-11. _[1,2,4,5,6,7,13] (insatisfatível)_
-12. [8,9,12,7,13,5,6]
-13. [13,5,6,7,8,9,12]
-14. [13,5,6,7,8,10,12]
-15. [8,9,12,7,13,5,14]
-16. [8,10,12,7,13,5,6]
-17. [8,10,12,7,13,5,14]
-18. [7,8,10,11,12,7]
-19. [8,10,11,12,7,8]
-20. [11,12,7,8,10,11]
-21. [12,7,8,10,11,12]
-22. [9,12,7,8,10,11]
-23. [10,11,12,7,8,9]
-24. [10,11,12,7,8,10]
-25. _[6,7,13,5,14] (insatisfatível)_
-26. [7,8,9,12,7]
-27. _[6,7,13,5,6] (insatisfatível)_
-28. [8,9,12,7,8]
-29. [7,13,5,6,7]
-30. [7,8,10,12,7]
-31. _[3,2,4,5,14] (insatisfatível)_
-32. _[1,2,4,5,14] (insatisfatível)_
-33. _[5,6,7,13,5] (insatisfatível)_
-34. [12,7,8,9,12]
-35. [12,7,8,10,12]
-36. _[13,5,6,7,13] (insatisfatível)_
-37. [9,12,7,8,9]
-38. [8,10,12,7,8]
-39. [10,12,7,8,9]
-40. [10,12,7,8,10]
-41. [1,2,3]
-42. [2,3,2]
-43. [3,2,3]
+1. [1,2,4,5,6,7,8,10,11,12] - Insatisfatível;
+2. [3,2,4,5,6,7,8,10,11,12] - Possui 01C não repetida;
+3. [1,2,4,5,6,7,8,10,12] - Entrada vazia;
+4. [1,2,4,5,6,7,8,9,12] - Insatisfatível;
+5. [3,2,4,5,6,7,8,10,12] - Entrada não vazia e não possui 01C;
+6. [3,2,4,5,6,7,8,9,12] - Possui 01C repetida;
+7. [8,10,11,12,7,13,5,14] - Possui 13P não repetida;
+8. [13,5,6,7,8,10,11,12] - Possui 01E, 01U ou 01P não repetidas;
+9. [8,10,11,12,7,13,5,6] - Possui 13C, 13E ou 13U não repetidas;
+10. [3,2,4,5,6,7,13] - Insatisfatível;
+11. [1,2,4,5,6,7,13] - Insatisfatível;
+12. [8,9,12,7,13,5,6] - Possui 13C, 13E ou 13U repetidas;
+13. [13,5,6,7,8,9,12] - Possui 01E, 01U ou 01P repetidas;
+14. [13,5,6,7,8,10,12] - Não possui 01E, 01U ou 01P;
+15. [8,9,12,7,13,5,14] - Possui 13P repetida;
+16. [8,10,12,7,13,5,6] - Não possui 13C, 13E ou 13U;
+17. [8,10,12,7,13,5,14] - Não possui 13P;
+18. [7,8,10,11,12,7] - Possui alguma carta não repetida;
+19. [8,10,11,12,7,8] - Possui qualquer carta de 01 a 12 de qualquer naipe não repetida;
+20. [11,12,7,8,10,11] - Possui 2 cartas não repetidas do mesmo naipe seguidas
+21. [12,7,8,10,11,12] - Possui qualquer carta de 02 a 13 de qualquer naipe não repetida;
+22. [9,12,7,8,10,11] - Possui uma carta repetida e outra não repetida do mesmo naipe seguidas;
+23. [10,11,12,7,8,9] - Possui uma carta não repetida e outra repetida do mesmo naipe seguidas;
+24. [10,11,12,7,8,10] - Possui sem rep. e [sem rep. ou sem carta] do mesmo naipe, seguidas;
+25. [6,7,13,5,14] - Insatisfatível;
+26. [7,8,9,12,7] - Possui alguma carta repetida;
+27. [6,7,13,5,6] - Insatisfatível;
+28. [8,9,12,7,8] - Possui alguma carta de 01 a 12 de qualquer naipe repetida;
+29. [7,13,5,6,7] - Sempre ocorre, devido ao for externo sempre se repetir 4x;
+30. [7,8,10,12,7] - Entrada não vazia com alguma carta do baralho faltando;
+31. [3,2,4,5,14] - Insatisfatível;
+32. [1,2,4,5,14] - Insatisfatível;
+33. [5,6,7,13,5] - Insatisfatível;
+34. [12,7,8,9,12] - Possui alguma carta de 02 a 13 de qualquer naipe repetida;
+35. [12,7,8,10,12] - Não possui nenhuma carta de 02 a 13 de qualquer naipe;
+36. [13,5,6,7,13] - Insatisfatível;
+37. [9,12,7,8,9] - Possui duas cartas repetidas seguidas do mesmo naipe;
+38. [8,10,12,7,8] - Não possui nenhuma de carta de 01 a 12 de qualquer naipe;
+39. [10,12,7,8,9] - Não possui e possui repetida do mesmo naipe, seguidas;
+40. [10,12,7,8,10] - Não possui e (sem rep. ou não possui) do mesmo naipe, seguidas;
+41. [1,2,3] - Entrada não vazia;
+42. [2,3,2] - Entrada não vazia;
+43. [3,2,3] - Entrada maior que 2 cartas;
 
 Já que o segundo e o terceiro **for** são obrigatórios de passar,
 não existem:
@@ -196,52 +199,6 @@ Ainda,
 
 Ou seja, todos os requisitos contendo 1,2,4 e não seguirem isso, são insatisfatíveis:
 (tira 1, 4, 11)
-
-## Particionamento Para Entendimento dos Requisitos
-
-29. [7,13,5,6,7] - Sempre ocorre, devido ao for externo sempre se repetir 4x
-
-30. [1,2,4,5,6,7,8,10,12] - Input vazio
-31. [1,2,3] - Input não vazio
-32. [2,3,2] - Input não vazio
-33. [3,2,3] - Input maior que 2 cartas
-
-34. [3,2,4,5,6,7,8,10,11,12] - Possui 01C sem rep.
-35. [3,2,4,5,6,7,8,10,12] - Não Possui 01C [ñ vazio]
-36. [3,2,4,5,6,7,8,9,12] - Possui repetida 01C
-
-37. [8,10,11,12,7,13,5,14] - Possui 13P sem rep.
-38. [8,9,12,7,13,5,14] - Possui repetida 13P
-39. [8,10,12,7,13,5,14] - Não Possui 13P
-
-40. [13,5,6,7,8,10,11,12] - Possui 01E, 01U ou 01P sem rep.
-41. [13,5,6,7,8,9,12] - Possui repetida 01E, 01U ou 01P
-42. [13,5,6,7,8,10,12] - Não Possui 01E, 01U ou 01P
-
-43. [8,10,11,12,7,13,5,6] - Possui 13C, 13E ou 13U sem rep.
-44. [8,9,12,7,13,5,6] - Possui repetida 13C, 13E ou 13U
-45. [8,10,12,7,13,5,6] - Não possui 13C, 13E ou 13U
-
-46. [7,8,10,11,12,7] - Possui alguma sem repetição
-47. [7,8,9,12,7] - Possui alguma repetida
-48. [7,8,10,12,7] - Não possui alguma
-
-49. [8,10,11,12,7,8] - Possui 01-012[CEUP] sem rep.
-50. [8,9,12,7,8] - Possui repetida 01-012[CEUP]
-51. [8,10,12,7,8] - Não possui algum 01-012[CEUP]
-
-52. [12,7,8,10,11,12] - Possui 02-013[CEUP] sem rep.
-53. [12,7,8,9,12] - Possui repetida 02-013[CEUP]
-54. [12,7,8,10,12] - Não possui algum 02-013[CEUP]
-
-55. [11,12,7,8,10,11] - Possui 2 sem rep. do mesmo naipe, seguidas
-56. [10,11,12,7,8,9] - Possui sem rep. e repetida do mesmo naipe, seguidas
-57. [10,11,12,7,8,10] - Possui sem rep. e [sem rep. ou sem carta] do mesmo naipe, seguidas
-
-58. [9,12,7,8,10,11] - Possui repetida e sem rep. do mesmo naipe, seguidas
-59. [9,12,7,8,9] - Possui duas rep. seguidas do mesmo naipe
-60. [10,12,7,8,9] - Não possui e possui repetida do mesmo naipe, seguidas
-61. [10,12,7,8,10] - Não possui e (sem rep. ou não possui) do mesmo naipe, seguidas
 
 ## Casos de Teste de Caminhos Primos
 
@@ -289,10 +246,14 @@ Ou seja, todos os requisitos contendo 1,2,4 e não seguirem isso, são insatisfa
 
 O for interno do código fornecido do `baralho2.py` enumerava com um range (1, 13). Caso esse tenha sido o pretendido, os testes não passariam. No entanto, para testar os mutantes, alteramos o for para ter o range de (1, 14).
 
-- **baralho1.py**: Não passou no caso de teste
-- **baralho2.py**: 46 mutantes, dentre os quais 44 morreram e 2 sobreviveram
+- **baralho1_1**: 74 mutantes: 🎉 65 morreram, 🙁 9 sobreviveram
+- **baralho1_2**: 48 mutantes: 🎉 47 morreram, 🙁 1 sobreviveu
+- **baralho2**: 46 mutantes: 🎉 44 morreram, 🙁 2 sobreviveram
 
-No entanto, não existem casos de teste que matariam esses mutantes.
+### Extra
+
+Abaixo, foram mostrados os mutantes sobreviventes do baralho2 no caso de mutações de caminhos primos.
+Pode-ser observar que não existem casos de teste que matariam esses mutantes.
 
 **Mutante Sobrevivente 1**
 
